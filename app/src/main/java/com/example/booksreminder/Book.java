@@ -1,6 +1,9 @@
 package com.example.booksreminder;
 
 import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 @Entity(tableName = "book_table")
 public class Book {
@@ -12,4 +15,3 @@ public class Book {
     public Book(@NonNull String book){this.mBook = book;}
     public String getBook(){return this.mBook;}
 }
-
